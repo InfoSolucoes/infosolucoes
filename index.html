@@ -1049,6 +1049,12 @@
           <!-- Formulário de Contato -->
           <div class="col-lg-8">
             <form action="https://script.google.com/macros/s/AKfycbyBl-Kp3MW13Oh8AP1Ct_bLW4G539xWG_0jzZ9N_ylUbY2z_5OSatGWVrXlziU-9eyX/exec" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+  
+              <!-- Honeypot escondido -->
+              <div style="display:none;">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+              </div>
+            
               <div class="row gy-3">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
@@ -1057,11 +1063,13 @@
                   <input type="email" name="email" class="form-control" placeholder="Seu Email" required>
                 </div>
               </div>
+              
               <div class="row gy-3 mt-3">
                 <div class="col-12">
                   <textarea name="message" class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
                 </div>
               </div>
+              
               <div class="text-center mt-4">
                 <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
               </div>
